@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<script>
+				
+			function desenhe(){
+			
+				var x = Math.round(Math.random() * (750 - 0) + 0);
+				var y = Math.round(Math.random() * (550 - 0) + 0);
+				
+				var r = Math.round(Math.random() * (255 - 0) + 0);
+				var g = Math.round(Math.random() * (255 - 0) + 0);
+				var b = Math.round(Math.random() * (155 - 0) + 0);
+			
+				var canvas = document.getElementById("bigdesenho");
+				var ctx = canvas.getContext("2d");
+				ctx.fillStyle = "rgb("+r+","+g+","+b+")";
+				ctx.fillRect(x, y, 80, 80);
+				// criaumretangulo(x, z,tl , ta)
+			
+			}
+		
+		</script>
+		<style>
+				
+		</style>
+	</head>
+	
+	<body>
+	
+		<canvas border="3" height="800" width="600" id="bigdesenho"> 
+			Este navegador não aceita canvas.
+		</canvas>
+		<br>
+		<button onclick="desenhe();" >Crie um Desenho</button>
+	
+	
+	</body>
+
+</html>
